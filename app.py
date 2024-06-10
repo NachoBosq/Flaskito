@@ -53,4 +53,5 @@ def predict():
 def check_logs():
     return pd.read_sql("SELECT * FROM logs", con= engine).to_html()
 
-app.run(debug=True)
+if __name__ == "__main__":
+    app.run(debug=True)
