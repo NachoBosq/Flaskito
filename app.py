@@ -3,10 +3,9 @@ import numpy as np
 import pickle
 from flask import Flask, request, jsonify
 from sqlalchemy import create_engine
-import sqlite3
 from datetime import datetime
 
-churro = "sqlite:///mpgdb.db"
+churro = "postgresql://postgres:postgresql@34.34.169.17/postgres"
 engine = create_engine(churro)
 
 
